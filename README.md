@@ -6,7 +6,7 @@
 
 一个基于 **Vue 3 + NestJS + MySQL** 构建的全栈个人博客系统，支持文章发布、分类/标签管理、评论系统、后台管理、权限控制等功能。适合用于个人技术分享、开发笔记记录或作为全栈项目实践。
 
-![License](https://img.shields.io/github/license/MIT)
+![License](https://img.shields.io/github/license/HonkerAcmen/myblog)
 ![Build](https://img.shields.io/github/actions/workflow/status/your-username/myblog/ci.yml?label=Build&logo=github-actions&style=flat-square)
 ![Vue](https://img.shields.io/badge/frontend-Vue3-42b883?logo=vue.js)
 ![NestJS](https://img.shields.io/badge/backend-NestJS-e0234e?logo=nestjs)
