@@ -176,5 +176,5 @@ docker-compose up -d
 
 ## 📄 License
 
-MIT © [your-name](https://github.com/HonkerAcmen)
+MIT © [HonkerAcmen](https://github.com/HonkerAcmen)
 
