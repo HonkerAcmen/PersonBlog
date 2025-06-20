@@ -203,16 +203,26 @@ export class UserService {
     return success(200, '获取成功', await this.userProviders.find());
   }
 
+  async getUserInfoByEmail(email: string) {
+    if (!email) {
+      error(400, '电子邮件不能为空');
+    }
+    if (!emailregex.test(email)) {
+      error(400, '电子邮件格式不正确');
+    }
+
+    return await this.userProviders.findOneBy({ email });
+  }
+
   async deleteUserById(id: number) {
     if (!id) {
       error(400, 'id不能为空');
     }
     const user = await this.userProviders.findOneBy({ id });
     try {
-      await this.userProviders.delete(user);
-      return success(200, '删除成功', user);
-    } catch (error) {
-      console.warn(error);
+      return success(200, '删除成功', await this.userProviders.delete(user.id));
+    } catch (err) {
+      console.warn(err);
       error(400, '删除失败');
     }
   }
