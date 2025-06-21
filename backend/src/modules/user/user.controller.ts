@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post, Query } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Post, Query } from '@nestjs/common';
 import { UserService } from './user.service';
 
 @Controller('user')
@@ -57,5 +57,15 @@ export class UserController {
   @Get('username')
   async getUserUsernameById(@Query('id') id: number) {
     return await this.userService.getUserUsernameById(id);
+  }
+
+  @Get('all')
+  async getUserInfoAll() {
+    return await this.userService.getUserInfoAll();
+  }
+
+  @Delete()
+  async deleteUserById(@Query('id') id: number) {
+    return await this.userService.deleteUserById(id);
   }
 }
