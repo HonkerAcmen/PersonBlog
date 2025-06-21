@@ -117,6 +117,7 @@ const mokeData = [
   // padding: 10px 10px;
   border-radius: 10px;
   background-color: #fff;
+  box-shadow: 0px 0px 1px #949494;
   overflow: hidden;
   cursor: pointer;
 

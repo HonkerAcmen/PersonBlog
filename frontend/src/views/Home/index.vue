@@ -98,6 +98,7 @@ function attention() {
     height: 25rem;
     background-color: #fff;
     border-radius: 30px;
+    box-shadow: 0px 0px 1px #949494;
     .avatar {
       width: 100px;
       height: 100px;
@@ -176,6 +177,7 @@ function attention() {
       height: 17rem;
       background-color: #fff;
       border-radius: 30px;
+      box-shadow: 0px 0px 1px #949494;
       .title {
         margin: 20px 30px;
         font-size: 1.2rem;
